@@ -30,6 +30,9 @@ echo "Start script running with these environment options"
 echo $SYNC_FOLDER
 set | grep PG
 
+# Sync for first time
+bash /gdrive.sh 2>&1
+
 # Now launch cron in then foreground.
 
 cron -f
